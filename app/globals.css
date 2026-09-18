@@ -1,0 +1,98 @@
+:root {
+  color-scheme: dark;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  line-height: 1.4;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: radial-gradient(circle at top, #3a2214, #120c09 55%);
+  color: #f4f1ea;
+}
+button, input { font: inherit; }
+a { color: inherit; }
+
+.eyebrow {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #f2c14e;
+  margin: 0 0 8px;
+}
+
+h1, h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+h1 { font-size: clamp(36px, 7vw, 64px); }
+.lede, .fineprint, .meta { color: rgba(244, 241, 234, 0.82); }
+.report { position: relative; z-index: 1; padding: 36px 28px 64px; max-width: 920px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.stats article {
+  background: rgba(20, 12, 8, 0.55);
+  border: 1px solid rgba(255, 210, 140, 0.16);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.stats span { display: block; font-size: 12px; opacity: 0.75; }
+.stats b { font-size: 26px; font-family: var(--font-display), Georgia, serif; }
+
+.forecast { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
+.cafe-grid { grid-template-columns: 1fr 1fr; }
+
+.tile {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  background: rgba(20, 12, 8, 0.55);
+  border: 1px solid rgba(255, 210, 140, 0.16);
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.tile p { margin: 4px 0 0; font-size: 13px; opacity: 0.82; }
+
+.error {
+  color: #ffb4b4;
+  background: rgba(120, 24, 24, 0.35);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.ghost {
+  display: inline-block;
+  background: rgba(255, 210, 140, 0.16);
+  border: 0;
+  color: inherit;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.topbar-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.fineprint { font-size: 12px; margin-top: 24px; }
+
+.specials {
+  background: rgba(242, 193, 78, 0.12);
+  border: 1px solid rgba(242, 193, 78, 0.35);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 8px 0 28px;
+}
+
+@media (max-width: 720px) {
+  .stats, .cafe-grid { grid-template-columns: 1fr; }
+}
