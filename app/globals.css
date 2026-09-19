@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif;
   line-height: 1.4;
 }
 
@@ -22,7 +22,7 @@ a { color: inherit; }
 }
 
 h1, h2 {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: ui-serif, Georgia, serif;
   font-weight: 500;
   margin: 0 0 10px;
 }
@@ -46,7 +46,7 @@ h1 { font-size: clamp(36px, 7vw, 64px); }
 }
 
 .stats span { display: block; font-size: 12px; opacity: 0.75; }
-.stats b { font-size: 26px; font-family: var(--font-display), Georgia, serif; }
+.stats b { font-size: 26px; font-family: ui-serif, Georgia, serif; }
 
 .forecast { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; }
 .cafe-grid { grid-template-columns: 1fr 1fr; }
